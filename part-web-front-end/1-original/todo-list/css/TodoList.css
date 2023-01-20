@@ -1,0 +1,33 @@
+.todo-list
+{
+    width: 700px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: auto;
+}
+
+.todo-list h6
+{
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--color-4);
+    margin-bottom: 20px;
+}
+
+.todo-list ul
+{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+@media (max-width: 750px)
+{
+    .todo-list
+    {
+        width: 100%;
+    }
+}
