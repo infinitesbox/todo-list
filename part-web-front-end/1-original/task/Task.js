@@ -95,6 +95,11 @@ class Task
     {
         const elementParent = this.element.parentElement
         if(elementParent && this.eventTransitionEndStatus === 2)
+        {
             elementParent.removeChild(this.element)
+            // remove li
+            const elementParentParent = elementParent.parentElement
+            elementParentParent.removeChild(elementParent)
+        }
     }
 }
