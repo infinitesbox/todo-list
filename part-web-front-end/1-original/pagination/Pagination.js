@@ -9,8 +9,7 @@ class Pagination
 
     data = {
         pagesTotal: 0,
-        pagesCurrent: 0,
-        pagesItemsMax: 0, 
+        pagesCurrent: 0, 
     } 
 
     constructor(arg)
@@ -69,9 +68,9 @@ class Pagination
             this.elementBtnPrev.classList.add('disabled')
 
         if(this.data.pagesCurrent < this.data.pagesTotal)
-            this.elementBtnNext.classList.add('disabled')
-        else
             this.elementBtnNext.classList.remove('disabled')
+        else
+            this.elementBtnNext.classList.add('disabled')
     }
 
     handleOnPrev(event)
