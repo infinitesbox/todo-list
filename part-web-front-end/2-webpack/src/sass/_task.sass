@@ -1,0 +1,81 @@
+.task
+    width: 700px
+    box-sizing: border-box
+    padding: 10px 15px
+    background-color: var(--color-4)
+    display: flex
+    align-items: center
+    gap: 10px
+    border-radius: 0.8rem
+    position: relative
+    left: 0
+    opacity: 1
+    transition-property: left, opacity
+    transition-duration: 0.5s
+
+    &.deleted
+        left: -100%
+        opacity: 0 
+
+    .btn-done
+        width: 25px
+        height: 25px
+        border: none
+        border-radius: 0.4rem
+        background-color: var(--color-4)
+        border: 1px solid var(--color-5)
+        color: var(--color-5)
+        cursor: pointer
+
+    &:not(.done) .btn-done:hover
+        border-color: var(--color-3)
+        color: var(--color-3)
+
+    &.done .btn-done
+        box-shadow: inset 1px 1px 4px var(--color-3)
+        border-color: var(--color-3)
+        background-color: var(--color-3)
+        color: var(--color-4)
+
+    .title
+        font-size: 0.8rem
+        flex: 1
+        overflow: hidden
+        white-space: nowrap
+        text-overflow: ellipsis
+        position: relative
+        color: var(--color-1)
+
+        &::after
+            position: absolute
+            top: 50%
+            left: 0
+            transform: translateY(-50%)
+            content: ''
+            display: block
+            width: 0
+            height: 1px
+            transition-property: width
+            transition-duration: 0.5s
+            background-color: var(--color-3)
+
+    &.done .title
+        color: var(--color-3)
+        &::after
+            width: 100%
+
+    .btn-delete
+        width: auto
+        height: auto
+        border: none
+        border-radius: 0.4rem
+        font-size: 20px
+        cursor: pointer
+        background-color: var(--color-4)
+        color: var(--color-5)
+
+        &:hover
+            color: var(--color-1)
+
+    @media (max-width: 750px)
+        width: 100%
