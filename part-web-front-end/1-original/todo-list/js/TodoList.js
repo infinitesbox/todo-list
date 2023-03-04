@@ -12,7 +12,6 @@ class TodoList
         pagination: {
             pagesTotal: 0,
             pagesCurrent: 0,
-            pagesItemsMax: 10, 
         }
     }
 
