@@ -60,12 +60,8 @@ class Pagination
 
     update()
     {
-        if(this.data.pagesTotal == 0)
-        {
-            this.elementBtnPrev.classList.add('disabled')
-            this.elementBtnNext.classList.add('disabled')
-            return
-        }
+        this.elementBtnPrev.classList.add('disabled')
+        this.elementBtnNext.classList.add('disabled')
  
         if(this.data.pagesCurrent > 1)
             this.elementBtnPrev.classList.remove('disabled')
@@ -73,9 +69,9 @@ class Pagination
             this.elementBtnPrev.classList.add('disabled')
 
         if(this.data.pagesCurrent < this.data.pagesTotal)
-            this.elementBtnNext.classList.remove('disabled')
-        else
             this.elementBtnNext.classList.add('disabled')
+        else
+            this.elementBtnNext.classList.remove('disabled')
     }
 
     handleOnPrev(event)
