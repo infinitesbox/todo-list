@@ -79,11 +79,7 @@ export default class Pagination
         {
             // do with worker
             const data = this.onPrev()
-            this.data = {
-                ...this.data,
-                ...data,
-            }
-            this.update()
+            this.reset(data)
         }
     }
 
@@ -93,11 +89,7 @@ export default class Pagination
         {
             // do with worker
             const data = this.onNext()
-            this.data = {
-                ...this.data,
-                ...data,
-            }
-            this.update()
+            this.reset(data)
         }
     }
 
