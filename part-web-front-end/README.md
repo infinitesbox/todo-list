@@ -14,9 +14,3 @@ I recommend you to start in the following order:
 - [3.2 - React - Redux](./3.2-react-redux/#)
 - [4 - Angular](./4-angular/#)
 - [5 - Vue](./5-vue/#)
-
-
-
-
-https://stackoverflow.com/questions/55488882/modulenamemapper-settings-in-jest-config-js-doesnt-work-on-circleci
-https://kulshekhar.github.io/ts-jest/docs/getting-started/paths-mapping/
