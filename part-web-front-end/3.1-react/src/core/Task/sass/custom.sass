@@ -1,0 +1,33 @@
+.task
+    background-color: var(--color-4)
+
+    .btn-done
+        background-color: var(--color-4)
+        border: 1px solid var(--color-5)
+        color: var(--color-5)
+
+    &:not(.done) .btn-done:hover
+        border-color: var(--color-3)
+        color: var(--color-3)
+
+    &.done .btn-done
+        box-shadow: inset 1px 1px 4px var(--color-3)
+        border-color: var(--color-3)
+        background-color: var(--color-3)
+        color: var(--color-4)
+
+    .title
+        color: var(--color-1)
+
+        &::after
+            background-color: var(--color-3)
+
+    &.done .title
+        color: var(--color-3)
+
+    .btn-delete
+        background-color: var(--color-4)
+        color: var(--color-5)
+
+        &:hover
+            color: var(--color-1)

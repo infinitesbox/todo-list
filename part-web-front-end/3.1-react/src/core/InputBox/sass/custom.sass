@@ -1,0 +1,24 @@
+.input-box
+    width: 700px
+    position: relative
+
+    &::before,
+    &::after
+        box-shadow: 1px 1px 4px var(--color-7)
+        background-color: var(--color-4)
+
+    .wrapper
+        background-color: var(--color-4)
+        box-shadow: 1px 1px 4px var(--color-7)
+
+        .icon
+            color: var(--color-3)
+
+        input
+            color: var(--color-1)
+
+            &::placeholder
+                color: var(--color-3)
+
+            &:focus + .icon
+                color: var(--color-1)
